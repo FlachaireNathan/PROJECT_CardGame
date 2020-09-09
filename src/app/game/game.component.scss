@@ -1,0 +1,8 @@
+.playable {
+	cursor: grab;
+}
+
+.selectable {
+	cursor: url('./../../assets/image/cursor/selectCardCursor.png'),     /* Modern browsers    */
+          move;                                       /* Older browsers     */
+}

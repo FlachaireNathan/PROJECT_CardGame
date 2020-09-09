@@ -1,0 +1,17 @@
+
+<div class="container">
+    <button (click)=debug()>debug</button>
+    <select (change)="deckSelected($event)">
+        <option *ngFor="let deck of allDecks"
+            [value]="deck.name"
+            [selected]="deck.selected">
+            {{deck.name}}
+        </option>
+    </select>
+    <span>{{gameInfo.roomCreator.username}} vs {{gameInfo.roomJoiner.username}}</span>
+    <div *ngIf="gameInfo.isCreator; else elseBlock">
+        <input type="checkbox" [checked]="isReady" (change)="changeReady()" disabled/>Ready
+        <button [disabled]="!isReady" (click)=startGame()>Start</button>
+    </div>
+    <ng-template #elseBlock><input type="checkbox" [checked]="isReady" (change)="changeReady()"/>Ready</ng-template>
+<div>
