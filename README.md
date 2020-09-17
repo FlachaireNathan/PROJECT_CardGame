@@ -1,5 +1,7 @@
-# Toche
+# CardGame
 
+Unfinished Web Card Game to play online. The project was at the start to create an original CCG like Hearthstone or MTG Arena but the project has been  let down. The remains are a deckbuilder and game instance that allow 1 player to challenge 1 other player in the friend list and then the start of the game create generating the decks preselected, dealing both hands, printing the cards and allow to even play some cards.
+The graphics are bad but the backend code is easily reusable for other sites.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
 
 ## Development server
@@ -26,7 +28,3 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
-
-# TODO
-
-afficher main et stack et cimetière
